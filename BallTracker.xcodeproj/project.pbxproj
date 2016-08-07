@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93B34F4B1D32D79E007E1C71 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93B34F4A1D32D79E007E1C71 /* AppDelegate.mm */; };
+		93B34F4E1D32D79E007E1C71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B34F4D1D32D79E007E1C71 /* main.m */; };
+		93B34F501D32D79E007E1C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B34F4F1D32D79E007E1C71 /* Assets.xcassets */; };
+		93B34F531D32D79E007E1C71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B34F511D32D79E007E1C71 /* MainMenu.xib */; };
+		93B34F5D1D32D90E007E1C71 /* libopencv_core.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B34F5A1D32D90E007E1C71 /* libopencv_core.3.1.0.dylib */; };
+		93B34F5E1D32D90E007E1C71 /* libopencv_imgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B34F5B1D32D90E007E1C71 /* libopencv_imgproc.3.1.0.dylib */; };
+		93B34F5F1D32D90E007E1C71 /* libopencv_videoio.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B34F5C1D32D90E007E1C71 /* libopencv_videoio.3.1.0.dylib */; };
+		93B34F621D32D9BB007E1C71 /* NSImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93B34F611D32D9BB007E1C71 /* NSImage+OpenCV.mm */; };
+		93B34F651D32DEBD007E1C71 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B34F641D32DEBD007E1C71 /* Circle.m */; };
+		93B34F681D32DF0E007E1C71 /* findHue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93B34F671D32DF0E007E1C71 /* findHue.mm */; };
+		93B34F6B1D32E150007E1C71 /* ImageTrackingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B34F6A1D32E150007E1C71 /* ImageTrackingView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93B34F461D32D79E007E1C71 /* BallTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B34F491D32D79E007E1C71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BallTracker/AppDelegate.h; sourceTree = "<group>"; };
+		93B34F4A1D32D79E007E1C71 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = BallTracker/AppDelegate.mm; sourceTree = "<group>"; };
+		93B34F4D1D32D79E007E1C71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93B34F4F1D32D79E007E1C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93B34F521D32D79E007E1C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		93B34F541D32D79E007E1C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B34F5A1D32D90E007E1C71 /* libopencv_core.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.1.0.dylib; path = /usr/local/lib/libopencv_core.3.1.0.dylib; sourceTree = "<absolute>"; };
+		93B34F5B1D32D90E007E1C71 /* libopencv_imgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.1.0.dylib; path = /usr/local/lib/libopencv_imgproc.3.1.0.dylib; sourceTree = "<absolute>"; };
+		93B34F5C1D32D90E007E1C71 /* libopencv_videoio.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.3.1.0.dylib; path = /usr/local/lib/libopencv_videoio.3.1.0.dylib; sourceTree = "<absolute>"; };
+		93B34F601D32D9BB007E1C71 /* NSImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+OpenCV.h"; path = "BallTracker/NSImage+OpenCV.h"; sourceTree = "<group>"; };
+		93B34F611D32D9BB007E1C71 /* NSImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSImage+OpenCV.mm"; path = "BallTracker/NSImage+OpenCV.mm"; sourceTree = "<group>"; };
+		93B34F631D32DEBD007E1C71 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = BallTracker/Circle.h; sourceTree = "<group>"; };
+		93B34F641D32DEBD007E1C71 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = BallTracker/Circle.m; sourceTree = "<group>"; };
+		93B34F661D32DF0E007E1C71 /* findHue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = findHue.h; path = BallTracker/findHue.h; sourceTree = "<group>"; };
+		93B34F671D32DF0E007E1C71 /* findHue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = findHue.mm; path = BallTracker/findHue.mm; sourceTree = "<group>"; };
+		93B34F691D32E150007E1C71 /* ImageTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageTrackingView.h; path = BallTracker/ImageTrackingView.h; sourceTree = "<group>"; };
+		93B34F6A1D32E150007E1C71 /* ImageTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageTrackingView.m; path = BallTracker/ImageTrackingView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93B34F431D32D79E007E1C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B34F5D1D32D90E007E1C71 /* libopencv_core.3.1.0.dylib in Frameworks */,
+				93B34F5E1D32D90E007E1C71 /* libopencv_imgproc.3.1.0.dylib in Frameworks */,
+				93B34F5F1D32D90E007E1C71 /* libopencv_videoio.3.1.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93AD78051D578E63008624DD /* ImageTrackingView */ = {
+			isa = PBXGroup;
+			children = (
+				93B34F631D32DEBD007E1C71 /* Circle.h */,
+				93B34F641D32DEBD007E1C71 /* Circle.m */,
+				93B34F691D32E150007E1C71 /* ImageTrackingView.h */,
+				93B34F6A1D32E150007E1C71 /* ImageTrackingView.m */,
+			);
+			name = ImageTrackingView;
+			sourceTree = "<group>";
+		};
+		93B34F3D1D32D79E007E1C71 = {
+			isa = PBXGroup;
+			children = (
+				93AD78051D578E63008624DD /* ImageTrackingView */,
+				93B34F661D32DF0E007E1C71 /* findHue.h */,
+				93B34F671D32DF0E007E1C71 /* findHue.mm */,
+				93B34F601D32D9BB007E1C71 /* NSImage+OpenCV.h */,
+				93B34F611D32D9BB007E1C71 /* NSImage+OpenCV.mm */,
+				93B34F491D32D79E007E1C71 /* AppDelegate.h */,
+				93B34F4A1D32D79E007E1C71 /* AppDelegate.mm */,
+				93B34F511D32D79E007E1C71 /* MainMenu.xib */,
+				93B34F4C1D32D79E007E1C71 /* Supporting Files */,
+				93B34F471D32D79E007E1C71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93B34F471D32D79E007E1C71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93B34F461D32D79E007E1C71 /* BallTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93B34F4C1D32D79E007E1C71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93B34F4F1D32D79E007E1C71 /* Assets.xcassets */,
+				93B34F541D32D79E007E1C71 /* Info.plist */,
+				93B34F5A1D32D90E007E1C71 /* libopencv_core.3.1.0.dylib */,
+				93B34F5B1D32D90E007E1C71 /* libopencv_imgproc.3.1.0.dylib */,
+				93B34F5C1D32D90E007E1C71 /* libopencv_videoio.3.1.0.dylib */,
+				93B34F4D1D32D79E007E1C71 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = BallTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93B34F451D32D79E007E1C71 /* BallTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B34F571D32D79E007E1C71 /* Build configuration list for PBXNativeTarget "BallTracker" */;
+			buildPhases = (
+				93B34F421D32D79E007E1C71 /* Sources */,
+				93B34F431D32D79E007E1C71 /* Frameworks */,
+				93B34F441D32D79E007E1C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BallTracker;
+			productName = BallTracker;
+			productReference = 93B34F461D32D79E007E1C71 /* BallTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93B34F3E1D32D79E007E1C71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Big Nerd Ranch";
+				TargetAttributes = {
+					93B34F451D32D79E007E1C71 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 93B34F411D32D79E007E1C71 /* Build configuration list for PBXProject "BallTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93B34F3D1D32D79E007E1C71;
+			productRefGroup = 93B34F471D32D79E007E1C71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93B34F451D32D79E007E1C71 /* BallTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93B34F441D32D79E007E1C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B34F501D32D79E007E1C71 /* Assets.xcassets in Resources */,
+				93B34F531D32D79E007E1C71 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93B34F421D32D79E007E1C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B34F681D32DF0E007E1C71 /* findHue.mm in Sources */,
+				93B34F4E1D32D79E007E1C71 /* main.m in Sources */,
+				93B34F651D32DEBD007E1C71 /* Circle.m in Sources */,
+				93B34F6B1D32E150007E1C71 /* ImageTrackingView.m in Sources */,
+				93B34F621D32D9BB007E1C71 /* NSImage+OpenCV.mm in Sources */,
+				93B34F4B1D32D79E007E1C71 /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93B34F511D32D79E007E1C71 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93B34F521D32D79E007E1C71 /* Base */,
+			);
+			name = MainMenu.xib;
+			path = BallTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93B34F551D32D79E007E1C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		93B34F561D32D79E007E1C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		93B34F581D32D79E007E1C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = BallTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bignerdranch.BallTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93B34F591D32D79E007E1C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = BallTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bignerdranch.BallTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93B34F411D32D79E007E1C71 /* Build configuration list for PBXProject "BallTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B34F551D32D79E007E1C71 /* Debug */,
+				93B34F561D32D79E007E1C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B34F571D32D79E007E1C71 /* Build configuration list for PBXNativeTarget "BallTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B34F581D32D79E007E1C71 /* Debug */,
+				93B34F591D32D79E007E1C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93B34F3E1D32D79E007E1C71 /* Project object */;
+}
