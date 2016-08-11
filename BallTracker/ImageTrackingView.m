@@ -87,8 +87,18 @@ NSRect maximalRectWithoutChangingAspect(NSRect boundary, NSSize shape)
         r.size.width = r.size.height = c.radius * scale * 2.0;
         //fprintf(stderr, "Scale is %.2f: %.2f, %.2f, %.2f, %.2f\n",scale, r.origin.x, r.origin.y, r.size.width, r.size.height);
         NSBezierPath *path = [NSBezierPath bezierPathWithOvalInRect:r];
+        float centerX = r.origin.x + r.size.width/2.0;
+        float centerY = r.origin.y + r.size.height/2.0;
+        
+        [path moveToPoint:NSMakePoint(centerX, r.origin.y)];
+        [path lineToPoint:NSMakePoint(centerX, r.origin.y + r.size.height)];
+        
+        [path moveToPoint:NSMakePoint(r.origin.x, centerY)];
+        [path lineToPoint:NSMakePoint(r.origin.x + r.size.width, centerY)];
+        
         [path setLineWidth:4];
         [path stroke];
+
     }
 }
 

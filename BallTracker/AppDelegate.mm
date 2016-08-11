@@ -89,7 +89,7 @@ using namespace cv;
     
     // Find the one with the largest area
     BOOL found = NO;
-    double biggestArea = 0.0;
+    double biggestArea = 50.0; // Ignore circles with area of less than 50 pixels
     std::vector<cv::Point> biggestContour;
     if (hierarchy.size() > 0) {
         for(int idx = 0; idx >= 0; idx = hierarchy[idx][0] ) {
@@ -114,8 +114,9 @@ using namespace cv;
         circle.center = nCenter;
         circle.radius = radius;
         [self.imageView setCircles:@[circle]];
-        // fprintf(stderr, "Circle: %.2f, %.2f: %.2f\n", circle.center.x, circle.center.y, circle.radius);
-        
+        fprintf(stderr, "Circle: %.2f, %.2f: %.2f\n", circle.center.x, circle.center.y, circle.radius);
+    } else {
+        [self.imageView setCircles:@[]];
     }
  
     
